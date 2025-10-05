@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: white;
+	background-color: rgb(110, 109, 109);
+}
+
+#page-header,
+#page-footer {
+	text-align: center;
+	background-color: blue;
+	padding: 20px;
+}
+
+#grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	padding: 20px;
+}
+
+.card {
+	background-color: white;
+	color: black;
+	border-radius: 8px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-title {
+	margin-top: 0;
+	color: blue;
+}
+.card-content {
+	flex-grow: 1;
+}
+
+.card-button {
+	background-color: rgb(66, 68, 68);
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	text-align: center;
+}
+
+.card-button:hover {
+	color: red;
+}

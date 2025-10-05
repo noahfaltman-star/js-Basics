@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+
+#container {
+	display: flex;
+	gap: 10px;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#section {
+	display: flex;
+	gap: 10px;
+}
+
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	flex-basis: 100px;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	font-size: large;
+}
+
+#pimg {
+	border: 1px solid lightgrey;
+	display: flex;
+}
+
+#section2 {
+	border: 1px solid lightgrey;
+	display: flex;
+	padding: 20px;
+}
+
+#side {
+	border: 1px solid black;
+	display: flex;
+	flex-basis: 300px;
+	flex-grow: 0;
+	justify-content: center;
+	align-items: center;
+	font-size: large;
+}
+
+#signin {
+	justify-content: left;
+}
+
+#search {
+	justify-content: right;
+}

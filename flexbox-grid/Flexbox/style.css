@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+}
+
+#container {
+	display: flex;
+	gap: 10px;
+}
+#parent {
+	display: flex;
+	flex-direction: column;
+}
+
+.Box {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	flex-basis: 100px;
+	justify-content: center;
+	padding: 20px;
+}
+
+#inner-parent1 {
+	display: flex;
+	padding-bottom: 10px;
+	gap: 10px;
+}
+
+#pimg {
+	border: 1px solid lightgray;
+	align-items: center;
+}
+
+#inner-parent2 {
+	border: 1px solid lightgray;
+	display: flex;
+	gap: 10px;
+	padding: 10px;
+}
+
+#signin {
+	justify-content: left;
+}
+
+#search {
+	justify-content: right;
+}
+
+#side {
+	border: 3px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 400px;
+}

@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: rgb(162, 159, 159);
+}
+
+#main {
+	margin: 0 20% 0 20%;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	height: 100vh;
+	gap: 20px;
+}
+
+#header,
+#footer {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: purple;
+	color: white;
+}
+
+#footer {
+	margin-top: auto;
+}
+
+#card-box {
+	padding: 10px;
+	display: flex;
+	gap: 10px;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	background-color: white;
+	border-radius: 8px;
+	padding: 10px;
+	background-color: white;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-rows: auto auto auto;
+
+	grid-template-areas:
+		"title . ."
+		"text text text"
+		". . link";
+}
+
+.card-title {
+	grid-area: title;
+	margin-top: 0;
+}
+
+.card-text {
+	grid-area: text;
+	flex-grow: 1;
+}
+
+.card-button {
+	grid-area: link;
+}
+
+#kort4 {
+	margin: 10px;
+}

@@ -1,0 +1,46 @@
+textarea {
+	resize: none;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#mclaren {
+	text-align: left;
+	float: left;
+	margin: 10px;
+}
+#corvette {
+	text-align: right;
+	float: right;
+	margin: 10px;
+}
+
+header {
+	text-align: center;
+}
+
+main {
+	text-align: justify;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: #f9f9f9;
+	color: green;
+}
+#youtube {
+	color: red;
+}
+
+footer {
+	text-align: left;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: #f9f9f9;
+	color: blue;
+}
