@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	color: purple;
+	background-color: grey;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+}
+
+#page-header,
+#page-footer {
+	text-align: center;
+	background-color: rgb(91, 89, 89);
+	border: 10px solid rgb(0, 0, 0);
+	border-radius: 10px;
+
+	width: 100%;
+}
+
+#page-main {
+	flex-grow: 1;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.cards-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 10px;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 380px;
+
+	border-radius: 10px;
+	box-shadow: 1px 2px 1px 4px black;
+	border: 1px solid black;
+	padding: 10px;
+
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+
+	grid-template-areas:
+		"header header ."
+		"text text text"
+		". . button";
+}
+
+.card:hover {
+	background-color: rgb(59, 131, 131);
+}
+
+.card-header {
+	grid-area: header;
+}
+
+.card-header h2 {
+	margin: 0;
+}
+
+.card-main {
+	grid-area: text;
+	text-align: center;
+	margin: 0;
+}
+
+.card-main img {
+	border-radius: 10px;
+}
+
+.card-footer {
+	grid-area: button;
+	text-align: right;
+}
+
+.card-footer button {
+	background-color: purple;
+	color: white;
+	padding: 15px 10px;
+	text-decoration: none;
+	text-decoration: underline;
+	border-radius: 8px;
+	font-weight: bold;
+}
